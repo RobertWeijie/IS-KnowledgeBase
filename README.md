@@ -36,4 +36,10 @@ I will make it easier for students to search for the names of different universi
 
 Each branch has its own exclusive .md file. These files are all students in school, which can be some testimonials, or the daily life of the university, etc.
 
+## **时间线/Timeline** 
+>  2023.06.09 created the repository
+>>2023.06.14  Began to collect relevant course materials at Beihang University
+>>> 2023.06.15 Contributors began to keep sending private messages to me to understand the development of the project and prepare to join
+>>>> 2023.06.16 The number of visits exceeded 1,000 and the number of clones exceeded 100
+
 
