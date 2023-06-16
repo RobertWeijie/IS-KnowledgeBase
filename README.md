@@ -10,7 +10,7 @@ Shared Library for International Students in China, You can refer to each branch
 ## **关于我/About Me** 🇵🇦
 ➡️ https://miniparob.carrd.co/
 
-## 为什么会有这个想法？Why i have have this idea?😂
+## 为什么会有这个想法？Why i have this idea?😂
 
 其实一开始有这个想法是想着打破来华留学生在中国留学的信息差，是否我们在选择“专业”的时候是否知道课程的难度？ 具体大学生活？ 在中国生活等等，然后觉得人生始终要做一些有意义的事情吧，所以就有了这个想法。
 
