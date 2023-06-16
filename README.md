@@ -7,6 +7,8 @@
 
 Shared Library for International Students in China, You can refer to each branch for details, corresponding to different schools
 
+## **关于我/About Me** 🇵🇦
+https://miniparob.carrd.co/
 
 ## **为什么会有这个想法？😂**
 
