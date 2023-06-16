@@ -17,12 +17,21 @@ Shared Library for International Students in China, You can refer to each branch
 In fact, I had this idea at the beginning to break the information gap for international students studying in China. Do we know the difficulty of the course when we choose a "major"? Specifically university life? After living in China and so on, I felt that I should always do something meaningful in life, so I came up with this idea.
 
 
-## **具体的库是怎么操作呢？**
+## **具体的库是怎么操作呢？** 😊
 
 
 我将会在每个分支不同大学的名称方便同学们去搜索，去获取自己想要的信息，希望一切的一切都能帮到大家
 
-**How does the specific library operate?**
+**How does the specific library operate?** 🎱
 
 
 I will make it easier for students to search for the names of different universities in each branch and obtain the information they want. I hope everything can help you.
+
+
+## **md.文件**
+每个分支都有自己专属的.md 文件，这些文件都是在校生的可以是一些感言，或者大学的生活日常等等一切
+
+
+Each branch has its own exclusive .md file. These files are all students in school, which can be some testimonials, or the daily life of the university, etc.
+
+
