@@ -1,4 +1,4 @@
-# IS-KnowledgeBase
+# IS-KnowledgeBase 🌍🌎🌏
 ![Image text](https://github.com/RobertWeijie/IS-KnowledgeBase/blob/main/logo.png)
 
 来华留学生共享库
@@ -22,13 +22,13 @@ In fact, I had this idea at the beginning to break the information gap for inter
 
 我将会在每个分支不同大学的名称方便同学们去搜索，去获取自己想要的信息，希望一切的一切都能帮到大家
 
-**How does the specific library operate?** 🎱
+**How does the specific library operate?** 
 
 
 I will make it easier for students to search for the names of different universities in each branch and obtain the information they want. I hope everything can help you.
 
 
-## **md.文件**
+## **md.文件** ⭐
 每个分支都有自己专属的.md 文件，这些文件都是在校生的可以是一些感言，或者大学的生活日常等等一切
 
 
