@@ -33,12 +33,28 @@ I will make it easier for students to search for the names of different universi
 
 Each branch has its own exclusive .md file. These files are all students in school, which can be some testimonials, or the daily life of the university, etc.
 
-## **时间线/Timeline** 
+## **时间线/Timeline** 🔤
 >  2023.06.09 created the repository
 >>2023.06.14  Began to collect relevant course materials at Beihang University
 >>> 2023.06.15 Contributors began to keep sending private messages to me to understand the development of the project and prepare to join
 >>>> 2023.06.16 The number of visits exceeded 1,000 and the number of clones exceeded 100
 
 
+## **怎么下载里面的文件和具体怎么操作？How to download the files inside and how to operate?** ✈️
+* 对于一些比较懂技术的同学可以clone 仓库项目到你的本地仓库也可以下载此仓库项目（指的是zip文件）
 
+   首先点击你想要看的分支然后点击Code 显示Download Zip点击即可下载到你的电脑
+
+*  如果仓库文件过多和过大下载速度过慢怎么办？
+  
+   在此我们可以在浏览器Chrome 插件商城搜索**Github加速**，下载安装后，刷新页面，此时就能看到**Download Zip** 有不同的国家线路下载此时会加速你的下载速度，如果不想下载整个仓库项目也可以单下载“**文件**” 直接点击相关文件按Download 即可
+
+* For some students who are more technically savvy, you can clone the warehouse project to your local warehouse or download this warehouse project (referring to the zip file)
+  
+  First click on the branch you want to see and then click Code to display Download Zip and click to download to your computer
+
+
+* What should I do if there are too many warehouse files and the download speed is too slow?
+  
+    Here we can search for Github acceleration in the browser Chrome plug-in store. After downloading and installing, refresh the page. At this time, you can see that Download Zip has different country lines to download. This will speed up your download speed. If you don’t want to download the entire warehouse project You can also download the "file" directly, click on the relevant file and press Download
 
