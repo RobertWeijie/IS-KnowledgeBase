@@ -1,3 +1,4 @@
 # IS-KnowledgeBase 🌍🌎🌏
 
-https://github.com/RobertWeijie/IS-KnowledgeBase/blob/Tsinghua-University/Tsinghua.png
+![Image text](https://github.com/RobertWeijie/IS-KnowledgeBase/blob/Tsinghua-University/Tsinghua.png)
+
