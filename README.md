@@ -38,6 +38,7 @@ Each branch has its own exclusive .md file. These files are all students in scho
 >>2023.06.14  Began to collect relevant course materials at Beihang University
 >>> 2023.06.15 Contributors began to keep sending private messages to me to understand the development of the project and prepare to join
 >>>> 2023.06.16 The number of visits exceeded 1,000 and the number of clones exceeded 100
+>>>>> 2023.06.18 More than 35 stars, more than 2000 views, more than 200 clones
 
 
 ## **怎么下载里面的文件和具体怎么操作？How to download the files inside and how to operate?** ✈️
