@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at FPQ_util.v(110): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at LED_Nixietube.v(60): always construct contains both blocking and non-blocking assignments

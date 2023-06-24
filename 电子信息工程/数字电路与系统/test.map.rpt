@@ -1,0 +1,1142 @@
+Analysis & Synthesis report for test
+Wed Dec 23 00:33:03 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |FPQ_top_1TT_2RC_with_ui
+ 15. Parameter Settings for User Entity Instance: key_debounce:deb_rst
+ 16. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us
+ 17. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable
+ 18. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|cur_value_translator:uut_trans
+ 19. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_TT
+ 20. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_RC0
+ 21. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_RC1
+ 22. Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP
+ 23. Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_TT
+ 24. Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_RC0
+ 25. Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_RC1
+ 26. Parameter Settings for User Entity Instance: FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4
+ 27. Parameter Settings for User Entity Instance: LED_Nixietube:i1
+ 28. Parameter Settings for User Entity Instance: LED_Nixietube:i2
+ 29. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod0
+ 30. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Div0
+ 31. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod1
+ 32. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Div1
+ 33. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod2
+ 34. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod0
+ 35. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Div0
+ 36. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod1
+ 37. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Div1
+ 38. Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod2
+ 39. Port Connectivity Checks: "LED_Nixietube:i2"
+ 40. Port Connectivity Checks: "LED_Nixietube:i1"
+ 41. Port Connectivity Checks: "FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4"
+ 42. Port Connectivity Checks: "div_half:uut_div_10ms"
+ 43. Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_RC1"
+ 44. Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_RC0"
+ 45. Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_TT"
+ 46. Port Connectivity Checks: "FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable"
+ 47. Port Connectivity Checks: "FPQ_mux_1TT_2RC:uut_mux"
+ 48. Port Connectivity Checks: "key_debounce:deb_rst"
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 23 00:33:03 2020            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; test                                             ;
+; Top-level Entity Name              ; FPQ_top_1TT_2RC_with_ui                          ;
+; Family                             ; Cyclone IV E                                     ;
+; Total logic elements               ; 422                                              ;
+;     Total combinational functions  ; 416                                              ;
+;     Dedicated logic registers      ; 88                                               ;
+; Total registers                    ; 88                                               ;
+; Total pins                         ; 31                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++----------------------------------------------------------------------------+-------------------------+--------------------+
+; Option                                                                     ; Setting                 ; Default Value      ;
++----------------------------------------------------------------------------+-------------------------+--------------------+
+; Device                                                                     ; EP4CE10F17C8            ;                    ;
+; Top-level entity name                                                      ; FPQ_top_1TT_2RC_with_ui ; test               ;
+; Family name                                                                ; Cyclone IV E            ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                     ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                      ; On                 ;
+; Enable compact report table                                                ; Off                     ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                    ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                     ; Off                ;
+; Preserve fewer node names                                                  ; On                      ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                     ; Off                ;
+; Verilog Version                                                            ; Verilog_2001            ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993               ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                    ; Auto               ;
+; Safe State Machine                                                         ; Off                     ; Off                ;
+; Extract Verilog State Machines                                             ; On                      ; On                 ;
+; Extract VHDL State Machines                                                ; On                      ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                     ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                    ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                     ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                      ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                      ; On                 ;
+; Parallel Synthesis                                                         ; On                      ; On                 ;
+; DSP Block Balancing                                                        ; Auto                    ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                      ; On                 ;
+; Power-Up Don't Care                                                        ; On                      ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                     ; Off                ;
+; Remove Duplicate Registers                                                 ; On                      ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                     ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                     ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                     ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                     ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                     ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                      ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                     ; Off                ;
+; Optimization Technique                                                     ; Balanced                ; Balanced           ;
+; Carry Chain Length                                                         ; 70                      ; 70                 ;
+; Auto Carry Chains                                                          ; On                      ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                      ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                     ; Off                ;
+; Auto ROM Replacement                                                       ; On                      ; On                 ;
+; Auto RAM Replacement                                                       ; On                      ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                      ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                    ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                    ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                      ; On                 ;
+; Strict RAM Replacement                                                     ; Off                     ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                      ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                     ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                      ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                     ; Off                ;
+; Auto Resource Sharing                                                      ; Off                     ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                     ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                     ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                     ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                      ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                     ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                      ; On                 ;
+; Report Parameter Settings                                                  ; On                      ; On                 ;
+; Report Source Assignments                                                  ; On                      ; On                 ;
+; Report Connectivity Checks                                                 ; On                      ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                     ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                       ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation      ; Normal compilation ;
+; HDL message level                                                          ; Level2                  ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                     ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                    ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                    ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                     ; 100                ;
+; Clock MUX Protection                                                       ; On                      ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                     ; Off                ;
+; Block Design Naming                                                        ; Auto                    ; Auto               ;
+; SDC constraint protection                                                  ; Off                     ; Off                ;
+; Synthesis Effort                                                           ; Auto                    ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                      ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                     ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium                  ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                    ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                      ; On                 ;
+; Synthesis Seed                                                             ; 1                       ; 1                  ;
++----------------------------------------------------------------------------+-------------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; FPQ_top_1TT_2RC_with_ui.v        ; yes             ; User Verilog HDL File        ; G:/QQPCmgr/Desktop/shumaguan/FPQ_top_1TT_2RC_with_ui.v         ;         ;
+; FPQ_components.v                 ; yes             ; User Verilog HDL File        ; G:/QQPCmgr/Desktop/shumaguan/FPQ_components.v                  ;         ;
+; FPQ_util.v                       ; yes             ; User Verilog HDL File        ; G:/QQPCmgr/Desktop/shumaguan/FPQ_util.v                        ;         ;
+; FPQ_layout.v                     ; yes             ; User Verilog HDL File        ; G:/QQPCmgr/Desktop/shumaguan/FPQ_layout.v                      ;         ;
+; LED_Nixietube.v                  ; yes             ; User Verilog HDL File        ; G:/QQPCmgr/Desktop/shumaguan/LED_Nixietube.v                   ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_m9m.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/lpm_divide_m9m.tdf             ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/sign_div_unsign_bkh.tdf        ;         ;
+; db/alt_u_div_a4f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/alt_u_div_a4f.tdf              ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/add_sub_7pc.tdf                ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/add_sub_8pc.tdf                ;         ;
+; db/lpm_divide_jhm.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/lpm_divide_jhm.tdf             ;         ;
+; db/lpm_divide_mhm.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/lpm_divide_mhm.tdf             ;         ;
+; db/sign_div_unsign_ekh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/sign_div_unsign_ekh.tdf        ;         ;
+; db/alt_u_div_g4f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/alt_u_div_g4f.tdf              ;         ;
+; db/lpm_divide_p9m.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/QQPCmgr/Desktop/shumaguan/db/lpm_divide_p9m.tdf             ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 422             ;
+;                                             ;                 ;
+; Total combinational functions               ; 416             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 93              ;
+;     -- 3 input functions                    ; 90              ;
+;     -- <=2 input functions                  ; 233             ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 270             ;
+;     -- arithmetic mode                      ; 146             ;
+;                                             ;                 ;
+; Total registers                             ; 88              ;
+;     -- Dedicated logic registers            ; 88              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 31              ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+; Maximum fan-out node                        ; clk_10MHz~input ;
+; Maximum fan-out                             ; 56              ;
+; Total fan-out                               ; 1395            ;
+; Average fan-out                             ; 2.46            ;
++---------------------------------------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                       ; Library Name ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |FPQ_top_1TT_2RC_with_ui                    ; 416 (1)           ; 88 (0)       ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |FPQ_top_1TT_2RC_with_ui                                                                                                                  ; work         ;
+;    |FPQ_disp_state_by_meter:uut_disp_state| ; 3 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_disp_state_by_meter:uut_disp_state                                                                           ; work         ;
+;       |mux4:uut_mux4|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4                                                             ; work         ;
+;    |FPQ_mux_1TT_2RC:uut_mux|                ; 89 (0)            ; 45 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux                                                                                          ; work         ;
+;       |cur_value_translator:uut_trans|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|cur_value_translator:uut_trans                                                           ; work         ;
+;       |div_half:uut_clk_T_5ms|              ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms                                                                   ; work         ;
+;       |divider:uut_clk_T_2500us|            ; 27 (27)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us                                                                 ; work         ;
+;       |round_robin_FP:uut_rr_FP|            ; 26 (26)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP                                                                 ; work         ;
+;       |timetable:uut_timetable|             ; 34 (34)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable                                                                  ; work         ;
+;    |LED_Nixietube:i1|                       ; 201 (44)          ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                     ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_jhm:auto_generated|    ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div0|lpm_divide_jhm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div0|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div0|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;       |lpm_divide:Div1|                     ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div1                                                                                 ; work         ;
+;          |lpm_divide_mhm:auto_generated|    ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div1|lpm_divide_mhm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_ekh:divider|   ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
+;                |alt_u_div_g4f:divider|      ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_g4f:divider ; work         ;
+;       |lpm_divide:Mod0|                     ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod0                                                                                 ; work         ;
+;          |lpm_divide_m9m:auto_generated|    ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod0|lpm_divide_m9m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;       |lpm_divide:Mod1|                     ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod1                                                                                 ; work         ;
+;          |lpm_divide_m9m:auto_generated|    ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod1|lpm_divide_m9m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;    |LED_Nixietube:i2|                       ; 94 (25)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                     ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_jhm:auto_generated|    ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Div0|lpm_divide_jhm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Div0|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Div0|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;       |lpm_divide:Mod0|                     ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod0                                                                                 ; work         ;
+;          |lpm_divide_m9m:auto_generated|    ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod0|lpm_divide_m9m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;       |lpm_divide:Mod1|                     ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod1                                                                                 ; work         ;
+;          |lpm_divide_m9m:auto_generated|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod1|lpm_divide_m9m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider|   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_a4f:divider|      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; work         ;
+;    |key_debounce:deb_rst|                   ; 28 (28)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPQ_top_1TT_2RC_with_ui|key_debounce:deb_rst                                                                                             ; work         ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state         ;
++------------------+----------------+----------------+--------------+------------------+------------------+
+; Name             ; state.S_WAIT_L ; state.S_WAIT_H ; state.S_NONE ; state.S_ACTIVE_L ; state.S_ACTIVE_H ;
++------------------+----------------+----------------+--------------+------------------+------------------+
+; state.S_NONE     ; 0              ; 0              ; 0            ; 0                ; 0                ;
+; state.S_WAIT_H   ; 0              ; 1              ; 1            ; 0                ; 0                ;
+; state.S_ACTIVE_H ; 0              ; 0              ; 1            ; 0                ; 1                ;
+; state.S_WAIT_L   ; 1              ; 0              ; 1            ; 0                ; 0                ;
+; state.S_ACTIVE_L ; 0              ; 0              ; 1            ; 1                ; 0                ;
++------------------+----------------+----------------+--------------+------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                  ;
++-------------------------------------------------------------------+-------------------------------------------------+
+; Register name                                                     ; Reason for Removal                              ;
++-------------------------------------------------------------------+-------------------------------------------------+
+; q_Q16_negedge:uut_q_Q16_RC1|reg_go                                ; Stuck at GND due to stuck port data_in          ;
+; q_Q16_negedge:uut_q_Q16_RC0|reg_go                                ; Stuck at GND due to stuck port data_in          ;
+; q_Q16_negedge:uut_q_Q16_TT|reg_go                                 ; Stuck at GND due to stuck port data_in          ;
+; q_Q16_negedge:uut_q_Q16_RC1|index[0..3]                           ; Lost fanout                                     ;
+; q_Q16_negedge:uut_q_Q16_RC0|index[0..3]                           ; Lost fanout                                     ;
+; q_Q16_negedge:uut_q_Q16_TT|index[0..3]                            ; Lost fanout                                     ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[1,5]                              ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[1]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[1,9]                               ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[3]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[3]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[7]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[11]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[11]                               ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[3,7]                               ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[7]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[0]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[4,6]                              ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[2]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[2]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[8]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[0]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[0]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[10]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[6]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[8]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[10]                               ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[4]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[9]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[4]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[2]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[5,9]                              ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[5]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[11] ;
+; q_Q16_negedge:uut_q_Q16_RC0|cnt[8]                                ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[10] ;
+; q_Q16_negedge:uut_q_Q16_TT|cnt[6]                                 ; Merged with q_Q16_negedge:uut_q_Q16_RC1|cnt[10] ;
+; LED_Nixietube:i2|Div_Cnt[12]                                      ; Merged with LED_Nixietube:i1|Div_Cnt[12]        ;
+; LED_Nixietube:i2|Div_Cnt[11]                                      ; Merged with LED_Nixietube:i1|Div_Cnt[11]        ;
+; LED_Nixietube:i2|Div_Cnt[10]                                      ; Merged with LED_Nixietube:i1|Div_Cnt[10]        ;
+; LED_Nixietube:i2|Div_Cnt[9]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[9]         ;
+; LED_Nixietube:i2|Div_Cnt[8]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[8]         ;
+; LED_Nixietube:i2|Div_Cnt[7]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[7]         ;
+; LED_Nixietube:i2|Div_Cnt[6]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[6]         ;
+; LED_Nixietube:i2|Div_Cnt[5]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[5]         ;
+; LED_Nixietube:i2|Div_Cnt[4]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[4]         ;
+; LED_Nixietube:i2|Div_Cnt[3]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[3]         ;
+; LED_Nixietube:i2|Div_Cnt[2]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[2]         ;
+; LED_Nixietube:i2|Div_Cnt[1]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[1]         ;
+; LED_Nixietube:i2|Div_Cnt[0]                                       ; Merged with LED_Nixietube:i1|Div_Cnt[0]         ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[11]                               ; Stuck at GND due to stuck port data_in          ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|index_L[1..3]    ; Lost fanout                                     ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state.S_ACTIVE_H ; Lost fanout                                     ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state.S_ACTIVE_L ; Lost fanout                                     ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state~9          ; Lost fanout                                     ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state~12         ; Lost fanout                                     ;
+; q_Q16_negedge:uut_q_Q16_RC1|cnt[10]                               ; Stuck at GND due to stuck port data_in          ;
+; Total Number of Removed Registers = 71                            ;                                                 ;
++-------------------------------------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
++-------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------+
+; Register name                                               ; Reason for Removal        ; Registers Removed due to This Register                                   ;
++-------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------+
+; q_Q16_negedge:uut_q_Q16_RC1|reg_go                          ; Stuck at GND              ; q_Q16_negedge:uut_q_Q16_RC1|cnt[11], q_Q16_negedge:uut_q_Q16_RC1|cnt[10] ;
+;                                                             ; due to stuck port data_in ;                                                                          ;
+; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|index_L[3] ; Lost Fanouts              ; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|index_L[2],             ;
+;                                                             ;                           ; FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|index_L[1]              ;
++-------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 88    ;
+; Number of registers using Synchronous Clear  ; 29    ;
+; Number of registers using Synchronous Load   ; 11    ;
+; Number of registers using Asynchronous Clear ; 37    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------+
+; Inverted Register Statistics                                     ;
++--------------------------------------------------------+---------+
+; Inverted Register                                      ; Fan out ;
++--------------------------------------------------------+---------+
+; FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable|cnt[6] ; 10      ;
+; Total number of inverted registers = 1                 ;         ;
++--------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |FPQ_top_1TT_2RC_with_ui|key_debounce:deb_rst|cnt[4]                                     ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable|cnt[10]         ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|cnt_timeout[0] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|index_L[0]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i1|Mux0                                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FPQ_top_1TT_2RC_with_ui|LED_Nixietube:i2|Mux3                                           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|state          ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |FPQ_top_1TT_2RC_with_ui|FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP|Selector2      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FPQ_top_1TT_2RC_with_ui ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; SEG_A          ; 0     ; Signed Integer                                                 ;
+; SEG_B          ; 1     ; Signed Integer                                                 ;
+; SEG_C          ; 2     ; Signed Integer                                                 ;
+; SEG_D          ; 3     ; Signed Integer                                                 ;
+; SEG_E          ; 4     ; Signed Integer                                                 ;
+; SEG_F          ; 5     ; Signed Integer                                                 ;
+; SEG_G          ; 6     ; Signed Integer                                                 ;
+; SEG_DP         ; 7     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_debounce:deb_rst ;
++----------------+------------------+-------------------------------+
+; Parameter Name ; Value            ; Type                          ;
++----------------+------------------+-------------------------------+
+; CNT_NUM        ; 1000001000110101 ; Unsigned Binary               ;
++----------------+------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us ;
++----------------+------------------+-----------------------------------------------------------+
+; Parameter Name ; Value            ; Type                                                      ;
++----------------+------------------+-----------------------------------------------------------+
+; CNT_NUM        ; 0110000110101000 ; Unsigned Binary                                           ;
++----------------+------------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; T_PCF          ; 10    ; Unsigned Binary                                                     ;
+; T_TT           ; 11    ; Unsigned Binary                                                     ;
+; T_MAR          ; 01    ; Unsigned Binary                                                     ;
+; T_DEF          ; 00    ; Unsigned Binary                                                     ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|cur_value_translator:uut_trans ;
++----------------+----------+-------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                    ;
++----------------+----------+-------------------------------------------------------------------------+
+; T_PCF          ; 10       ; Unsigned Binary                                                         ;
+; T_TT           ; 11       ; Unsigned Binary                                                         ;
+; T_MAR          ; 01       ; Unsigned Binary                                                         ;
+; T_DEF          ; 00       ; Unsigned Binary                                                         ;
+; MTU_VAL        ; 01011111 ; Unsigned Binary                                                         ;
++----------------+----------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_TT ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; PRIORITY       ; 01    ; Unsigned Binary                                                          ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_RC0 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; PRIORITY       ; 11    ; Unsigned Binary                                                           ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_RC1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; PRIORITY       ; 11    ; Unsigned Binary                                                           ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_TT ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; offset         ; 0     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_RC0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; offset         ; 2     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: q_Q16_negedge:uut_q_Q16_RC1 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; offset         ; 10    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LED_Nixietube:i1 ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; Display_0      ; 11111100 ; Unsigned Binary                   ;
+; Display_1      ; 01100000 ; Unsigned Binary                   ;
+; Display_2      ; 11011010 ; Unsigned Binary                   ;
+; Display_3      ; 11110010 ; Unsigned Binary                   ;
+; Display_4      ; 01100110 ; Unsigned Binary                   ;
+; Display_5      ; 10110110 ; Unsigned Binary                   ;
+; Display_6      ; 10111110 ; Unsigned Binary                   ;
+; Display_7      ; 11100000 ; Unsigned Binary                   ;
+; Display_8      ; 11111110 ; Unsigned Binary                   ;
+; Display_9      ; 11110110 ; Unsigned Binary                   ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LED_Nixietube:i2 ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; Display_0      ; 11111100 ; Unsigned Binary                   ;
+; Display_1      ; 01100000 ; Unsigned Binary                   ;
+; Display_2      ; 11011010 ; Unsigned Binary                   ;
+; Display_3      ; 11110010 ; Unsigned Binary                   ;
+; Display_4      ; 01100110 ; Unsigned Binary                   ;
+; Display_5      ; 10110110 ; Unsigned Binary                   ;
+; Display_6      ; 10111110 ; Unsigned Binary                   ;
+; Display_7      ; 11100000 ; Unsigned Binary                   ;
+; Display_8      ; 11111110 ; Unsigned Binary                   ;
+; Display_9      ; 11110110 ; Unsigned Binary                   ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_jhm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 7              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_mhm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i1|lpm_divide:Mod2 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 7              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_p9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_jhm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 7              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_mhm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LED_Nixietube:i2|lpm_divide:Mod2 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                 ;
+; LPM_WIDTHD             ; 7              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_p9m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "LED_Nixietube:i2" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; EN   ; Input ; Info     ; Stuck at VCC       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "LED_Nixietube:i1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; EN   ; Input ; Info     ; Stuck at VCC       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; in2  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "div_half:uut_div_10ms"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cp   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_RC1"                                                                ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; bool_new_pkt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_RC0"                                                                ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; bool_new_pkt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "q_Q16_negedge:uut_q_Q16_TT"                                                                 ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; bool_new_pkt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable" ;
++-------+-------+----------+--------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                          ;
++-------+-------+----------+--------------------------------------------------+
+; ena_n ; Input ; Info     ; Stuck at GND                                     ;
++-------+-------+----------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPQ_mux_1TT_2RC:uut_mux"                                                                     ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; channel[3..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "key_debounce:deb_rst"                                                                                         ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; key_state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; key_pulse ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Dec 23 00:33:00 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file fpq_top_1tt_2rc_with_ui.v
+    Info (12023): Found entity 1: FPQ_top_1TT_2RC_with_ui
+Info (12021): Found 1 design units, including 1 entities, in source file fpq_disp_value.v
+    Info (12023): Found entity 1: FPQ_disp_value
+Info (12021): Found 5 design units, including 5 entities, in source file fpq_components.v
+    Info (12023): Found entity 1: timetable
+    Info (12023): Found entity 2: cur_value_translator
+    Info (12023): Found entity 3: q_server
+    Info (12023): Found entity 4: q_server_3_states
+    Info (12023): Found entity 5: round_robin_FP
+Info (12021): Found 6 design units, including 6 entities, in source file fpq_util.v
+    Info (12023): Found entity 1: div_half
+    Info (12023): Found entity 2: divider
+    Info (12023): Found entity 3: div_16
+    Info (12023): Found entity 4: key_debounce
+    Info (12023): Found entity 5: meter_log2_rank8_max95
+    Info (12023): Found entity 6: mux4
+Info (12021): Found 6 design units, including 6 entities, in source file fpq_layout.v
+    Info (12023): Found entity 1: q_Q16_negedge
+    Info (12023): Found entity 2: q_Q16
+    Info (12023): Found entity 3: FPQ_disp_state
+    Info (12023): Found entity 4: FPQ_disp_q_head
+    Info (12023): Found entity 5: FPQ_mux_1TT_2RC
+    Info (12023): Found entity 6: FPQ_disp_state_by_meter
+Info (12021): Found 1 design units, including 1 entities, in source file led_nixietube.v
+    Info (12023): Found entity 1: LED_Nixietube
+Warning (10236): Verilog HDL Implicit Net warning at FPQ_top_1TT_2RC_with_ui.v(42): created implicit net for "rst_n"
+Info (12127): Elaborating entity "FPQ_top_1TT_2RC_with_ui" for the top level hierarchy
+Info (12128): Elaborating entity "key_debounce" for hierarchy "key_debounce:deb_rst"
+Info (12128): Elaborating entity "FPQ_mux_1TT_2RC" for hierarchy "FPQ_mux_1TT_2RC:uut_mux"
+Info (12128): Elaborating entity "divider" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us"
+Info (12128): Elaborating entity "div_half" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms"
+Info (12128): Elaborating entity "timetable" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|timetable:uut_timetable"
+Info (12128): Elaborating entity "cur_value_translator" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|cur_value_translator:uut_trans"
+Info (12128): Elaborating entity "q_server_3_states" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_TT"
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(210): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(217): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(218): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(220): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(221): truncated value with size 2 to match size of target (1)
+Warning (10199): Verilog HDL Case Statement warning at FPQ_components.v(222): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at FPQ_components.v(233): case item expression never matches the case expression
+Info (12128): Elaborating entity "q_server_3_states" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|q_server_3_states:uut_q_s_RC0"
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(210): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(217): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(218): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(220): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(221): truncated value with size 2 to match size of target (1)
+Warning (10199): Verilog HDL Case Statement warning at FPQ_components.v(222): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at FPQ_components.v(233): case item expression never matches the case expression
+Info (12128): Elaborating entity "round_robin_FP" for hierarchy "FPQ_mux_1TT_2RC:uut_mux|round_robin_FP:uut_rr_FP"
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(314): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at FPQ_components.v(332): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at FPQ_components.v(278): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct
+Info (12128): Elaborating entity "q_Q16_negedge" for hierarchy "q_Q16_negedge:uut_q_Q16_TT"
+Info (12128): Elaborating entity "q_Q16_negedge" for hierarchy "q_Q16_negedge:uut_q_Q16_RC0"
+Info (12128): Elaborating entity "q_Q16_negedge" for hierarchy "q_Q16_negedge:uut_q_Q16_RC1"
+Info (12128): Elaborating entity "FPQ_disp_state_by_meter" for hierarchy "FPQ_disp_state_by_meter:uut_disp_state"
+Info (12128): Elaborating entity "mux4" for hierarchy "FPQ_disp_state_by_meter:uut_disp_state|mux4:uut_mux4"
+Info (12128): Elaborating entity "LED_Nixietube" for hierarchy "LED_Nixietube:i1"
+Warning (10036): Verilog HDL or VHDL warning at LED_Nixietube.v(9): object "Num_Display" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at LED_Nixietube.v(56): truncated value with size 32 to match size of target (2)
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(63): variable "Data_Bin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at LED_Nixietube.v(63): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(64): variable "Data_Bin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at LED_Nixietube.v(64): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(65): variable "Data_Bin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at LED_Nixietube.v(65): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(66): variable "Data_Bin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at LED_Nixietube.v(66): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(67): variable "COM_R" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at LED_Nixietube.v(67): variable "a" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (278001): Inferred 10 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i1|Mod0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i1|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i1|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i1|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i1|Mod2"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i2|Mod0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i2|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i2|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i2|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LED_Nixietube:i2|Mod2"
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i1|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "LED_Nixietube:i1|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_m9m.tdf
+    Info (12023): Found entity 1: lpm_divide_m9m
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_a4f.tdf
+    Info (12023): Found entity 1: alt_u_div_a4f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i1|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "LED_Nixietube:i1|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jhm.tdf
+    Info (12023): Found entity 1: lpm_divide_jhm
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i1|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "LED_Nixietube:i1|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_mhm.tdf
+    Info (12023): Found entity 1: lpm_divide_mhm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ekh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_ekh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_g4f.tdf
+    Info (12023): Found entity 1: alt_u_div_g4f
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i1|lpm_divide:Mod2"
+Info (12133): Instantiated megafunction "LED_Nixietube:i1|lpm_divide:Mod2" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_p9m.tdf
+    Info (12023): Found entity 1: lpm_divide_p9m
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i2|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "LED_Nixietube:i2|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i2|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "LED_Nixietube:i2|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "LED_Nixietube:i2|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "LED_Nixietube:i2|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SEG_s[0]" is stuck at GND
+    Warning (13410): Pin "SEG[0]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "LED_Nixietube:i1|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider|add_sub_7_result_int[0]~0"
+    Info (17048): Logic cell "LED_Nixietube:i1|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider|add_sub_6_result_int[0]~10"
+    Info (17048): Logic cell "LED_Nixietube:i2|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider|add_sub_7_result_int[0]~0"
+Info (144001): Generated suppressed messages file G:/QQPCmgr/Desktop/shumaguan/output_files/test.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 457 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 426 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4664 megabytes
+    Info: Processing ended: Wed Dec 23 00:33:03 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in G:/QQPCmgr/Desktop/shumaguan/output_files/test.map.smsg.
+
+

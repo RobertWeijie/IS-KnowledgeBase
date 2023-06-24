@@ -1,0 +1,257 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -3.973
+TNS   : -89.551
+
+Type  : Slow 1200mV 85C Model Setup 'clk_10MHz'
+Slack : -3.329
+TNS   : -113.533
+
+Type  : Slow 1200mV 85C Model Setup 'LED_Nixietube:i2|Div_CLK'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1200mV 85C Model Setup 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_10MHz'
+Slack : -0.090
+TNS   : -0.107
+
+Type  : Slow 1200mV 85C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LED_Nixietube:i2|Div_CLK'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -3.242
+TNS   : -3.242
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_10MHz'
+Slack : -1.365
+TNS   : -22.106
+
+Type  : Slow 1200mV 85C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -0.843
+TNS   : -15.967
+
+Type  : Slow 1200mV 85C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.814
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk_10MHz'
+Slack : 1.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 3.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_10MHz'
+Slack : -3.000
+TNS   : -86.272
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -1.487
+TNS   : -40.149
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LED_Nixietube:i1|Div_CLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LED_Nixietube:i2|Div_CLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -3.652
+TNS   : -81.543
+
+Type  : Slow 1200mV 0C Model Setup 'clk_10MHz'
+Slack : -3.044
+TNS   : -100.721
+
+Type  : Slow 1200mV 0C Model Setup 'LED_Nixietube:i2|Div_CLK'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_10MHz'
+Slack : -0.073
+TNS   : -0.073
+
+Type  : Slow 1200mV 0C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LED_Nixietube:i2|Div_CLK'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -2.882
+TNS   : -2.882
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_10MHz'
+Slack : -1.169
+TNS   : -18.774
+
+Type  : Slow 1200mV 0C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -0.654
+TNS   : -12.366
+
+Type  : Slow 1200mV 0C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk_10MHz'
+Slack : 1.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 3.088
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_10MHz'
+Slack : -3.000
+TNS   : -86.272
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -1.487
+TNS   : -40.149
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LED_Nixietube:i1|Div_CLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LED_Nixietube:i2|Div_CLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -1.094
+TNS   : -21.747
+
+Type  : Fast 1200mV 0C Model Setup 'clk_10MHz'
+Slack : -0.828
+TNS   : -19.679
+
+Type  : Fast 1200mV 0C Model Setup 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'LED_Nixietube:i2|Div_CLK'
+Slack : 0.565
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_10MHz'
+Slack : -0.143
+TNS   : -0.269
+
+Type  : Fast 1200mV 0C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast 1200mV 0C Model Hold 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LED_Nixietube:i2|Div_CLK'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LED_Nixietube:i1|Div_CLK'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -0.896
+TNS   : -0.896
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_10MHz'
+Slack : -0.029
+TNS   : -0.290
+
+Type  : Fast 1200mV 0C Model Recovery 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk_10MHz'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : 1.480
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_10MHz'
+Slack : -3.000
+TNS   : -63.248
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|div_half:uut_clk_T_5ms|toggle'
+Slack : -1.000
+TNS   : -27.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LED_Nixietube:i1|Div_CLK'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LED_Nixietube:i2|Div_CLK'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FPQ_mux_1TT_2RC:uut_mux|divider:uut_clk_T_2500us|cp'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------
