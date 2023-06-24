@@ -3,3 +3,6 @@
 
 
 ## **重要信息/Important information**🔋
+在这个分支我们将会收到不同的留学生同学在中国旅游的指南！！
+
+In this branch we will receive different guides for foreign students traveling in China🇨🇳
